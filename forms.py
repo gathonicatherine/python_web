@@ -1,10 +1,9 @@
 from django import forms
-from django.forms import fields
-from django.db import models
-from .models import Course 
+from .models import Student
 
 
-class CourseRegistrationForm(forms.ModelForm):
+class StudentRegistrationForm(forms.ModelForm):
     class Meta:
-        model = Course
+        model = Student
         fields ="__all__"
+        # How one creates a form

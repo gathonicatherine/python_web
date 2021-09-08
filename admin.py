@@ -1,5 +1,7 @@
+from django.conf.urls import url
 from django.contrib import admin
-from.models import Course
-admin.site.register(Course)
+from django.urls.conf import path
+from django.urls.resolvers import URLPattern
 
-
+from.models import Student
+admin.site.register(Student)
